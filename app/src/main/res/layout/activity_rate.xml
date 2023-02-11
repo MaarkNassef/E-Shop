@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Enter the product you are looking for...">
+
+                <ImageButton
+                    android:id="@+id/rate_back_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Rate"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rate_back_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Rate_Display_Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Please give us a rate and your feedback in request to improve our system"
+                    android:textAlignment="center"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#8D8D8D"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Rate_Text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Rate is 0.0"
+                        android:textAlignment="center"
+                        android:textColor="#020101"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:progressBackgroundTint="#EAE9DF"
+                        android:progressTint="#FFEB3B" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="138dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:text=" Add Comment"
+                            android:textAlignment="viewStart"
+                            android:textColor="#000000"
+                            android:textSize="17dp"
+                            tools:text="Add Comment" />
+
+                        <EditText
+                            android:id="@+id/Rate_Comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:background="@drawable/rounded_textbox"
+                            android:drawableLeft="@drawable/comment"
+                            android:drawablePadding="10dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:ems="10"
+                            android:focusableInTouchMode="true"
+                            android:hint="Enter your feedback here....."
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textColorHint="@color/dark_gray"
+                            android:textSize="18sp" />
+
+
+                        <Button
+                            android:id="@+id/Rate_Submit_btn"
+                            android:layout_width="283dp"
+                            android:layout_height="68dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Sumbit"
+                            android:textAlignment="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            app:cornerRadius="?attr/listPreferredItemHeightLarge" />
+
+
+                    </LinearLayout> />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

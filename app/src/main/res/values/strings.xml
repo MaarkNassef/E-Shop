@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">E-Shop</string>
+    <string-array name="phones">
+        <item>iPhone 10</item>
+        <item>iPhone 11</item>
+        <item>iPhone 12</item>
+        <item>iPhone 13</item>
+        <item>iPhone 14</item>
+    </string-array>
+    <string-array name="prices">
+        <item>10,000</item>
+        <item>20,000</item>
+        <item>30,000</item>
+        <item>40,000</item>
+        <item>50,000</item>
+    </string-array>
+    <string-array name="activities">
+        <item>Change Password</item>
+        <item>Forget Password</item>
+        <item>Get Started</item>
+        <item>Products</item>
+        <item>Product View</item>
+        <item>Search</item>
+        <item>Sign Up</item>
+        <item>Sign In</item>
+        <item>Browse Category</item>
+        <item>Cart</item>
+        <item>Rate</item>
+        <item>GPS</item>
+        <item>Admin</item>
+        <item>Visualization</item>
+        <item>Report</item>
+        <item>Feedback</item>
+        <item>Modify Category</item>
+        <item>Modify Product</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_address">AddressActivity</string>
+</resources>
